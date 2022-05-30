@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>survey form microverse</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="main">
+  
+     <header>
+    <h1 id="title">Marvel Universe Survey</h1>
+    <p id="description">things that fans should know</p>
+     </header>
+  
+  <form id="survey-form">
+
+    <div class="input">
+    <label for="name" id="name-label">What's Your Name</label>
+    <input type="name" id="name" required placeholder="Capitan Rodrigues">
+    </div>
+
+    <div class="input">
+    <label for="email" id="email-label">What's Your email</label>
+    <input type="email" id="email" required placeholder="capamericafan2000@gmail.com">
+    </div>
+
+    <div class="input">
+    <label for="number" id="number-label">How Old Are You</label>
+    <input type="number" id="number" required min="12" max="99" placeholder="age">
+    </div>
+
+    <div class="input">
+    <label for="movies" id="selector">choose your favorite movie </label>
+  <select type="dropdown" id="dropdown">
+    <option value="raganrok">thor:raganrok</option>
+    <option value="widow">black widow</option>
+    <option value="doctor">doctor strange</option>
+    <option value="endgame">end game </option>
+    <option value="noway">spiderman: no way home </option>
+  </select>
+  </div>
+
+  <div class="input radials">
+  <h3>How Many Movies Have You Seen?</h3>
+    <label for="1"><input class="nmov" type="radio" name="nmovies" value="1">1</label>
+    <label for="2"><input class="nmov" type="radio" name="nmovies" value="2">2</label>
+    <label for="3"><input class="nmov" type="radio" name="nmovies" value="3">3</label>
+    <label for="all"><input class="nmov" type="radio" name="nmovies" value="all">All</label>
+  </div>
+
+  <div class="input checkbox">
+  <h3>Favorite Heroe?</h3>
+    <label for="thor"><input class="heroes" type="checkbox" name="heroes" value="thor">Thor</label>
+    <label for="spiderman"><input class="heroes" type="checkbox" name="heroes" value="spiderman">Spiderman</label>
+    <label for="strange"><input class="heroes" type="checkbox" name="heroes" value="strange">Doctor strange</label>
+    <label for="iron"><input class="heroes" type="checkbox" name="heroes" value="iron">Ironman</label>
+  </div>
+
+  <div class="input">
+    <h3>Comments:</h3>
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+  </div>
+
+
+  <button id="submit">Submit</button>
+</form>
+
+  </div>
+
+
+
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
